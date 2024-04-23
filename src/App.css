@@ -1,36 +1,59 @@
 .App {
-  box-sizing: border-box;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #f0f0f0;
 }
 
 .CalcContainer {
-  width: 500px;
+  display: flex;
+  flex-direction: column;
   margin: auto;
+  width: 250px;
+  height: 400px; 
+  border-radius: 8px; 
+  background: linear-gradient(to top, #131c2d, #323e54);
 }
 
 .CalcDisplay {
-  border: 1px solid #505050;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   height: 40px;
-  font-size: 2em;
-  margin-bottom: 2px;
+  font-size: 3em;
   padding: 10px;
-  text-align: right;
-  background: gray;
+  color: white;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px; 
+  margin-top: auto;
 }
 
 .ButtonContainer {
   display: grid;
-  gap: 2px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 50px); 
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 
 .ButtonContainer > button {
+  display: flex;
   justify-content: center;
-  border: 1px solid #1C1C1C;
+  align-items: center;
+  height: 50px;
+  width: 50px; 
   font-size: 2em;
-  background-color: yellow;
-
+  color: #1991ff;
+  background-color: #303e5f;
+  border: 1px solid transparent;
+  border-radius: 8px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-
-
+.ButtonContainer > .operationButton {
+  background-color: #1991ff;
+  color: white;
+}

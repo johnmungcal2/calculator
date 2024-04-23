@@ -39,26 +39,26 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: '#c4cbe1'}}>
       <div className="CalcContainer">
         <CalcDisplay display={disp} />
         <div className="ButtonContainer">
-          <CalcButton label={"/"} onClick={clickHandler}/>
+        <CalcButton label={"/"} onClick={clickHandler} buttonClassName="operationButton"/>
           <CalcButton label={7} onClick={numberClickHandler}/>
           <CalcButton label={8} onClick={numberClickHandler}/>
           <CalcButton label={9} onClick={numberClickHandler}/>
-          <CalcButton label={"*"} onClick={clickHandler}/>
+          <CalcButton label={"x"} onClick={clickHandler} buttonClassName="operationButton"/>
           <CalcButton label={4} onClick={numberClickHandler}/>
           <CalcButton label={5} onClick={numberClickHandler}/>
           <CalcButton label={6} onClick={numberClickHandler}/>
-          <CalcButton label={"+"} onClick={clickHandler}/>
+          <CalcButton label={"+"} onClick={clickHandler} buttonClassName="operationButton"/>
           <CalcButton label={1} onClick={numberClickHandler}/>
           <CalcButton label={2} onClick={numberClickHandler}/>
           <CalcButton label={3} onClick={numberClickHandler}/>
-          <CalcButton label={"-"}  onClick={clickHandler}/>
+          <CalcButton label={"-"} onClick={clickHandler} buttonClassName="operationButton"/>
           <CalcButton label={"C"} onClick={clickHandler}/>
           <CalcButton label={0} onClick={numberClickHandler}/>
-          <CalcButton label={"="} onClick={clickHandler}/>
+          <CalcButton label={"="} onClick={clickHandler} buttonClassName="operationButton"/>
         </div>
       </div>
     </div>
