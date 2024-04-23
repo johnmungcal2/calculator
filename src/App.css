@@ -1,0 +1,21 @@
+.App {
+}
+
+.CalcContainer {
+}
+
+.CalcDisplay {
+  border: 1px solid #505050;
+  margin-bottom: 2px;
+}
+
+.ButtonContainer {
+}
+
+.ButtonContainer > button {
+  justify-content: center;
+  border: 1px solid #1C1C1C;
+}
+
+
+
